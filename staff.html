@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TitanBK | Staff Gaming Portfolio</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(270deg,#0b0f1a,#1e3a8a,#0b0f1a);
+background-size:600% 600%;
+animation:gradientBG 20s ease infinite;
+color:#f1f5f9;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Cielo */
+.sky{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+overflow:hidden;
+}
+
+/* estrellas */
+.star{
+position:absolute;
+width:3px;
+height:3px;
+background:white;
+border-radius:50%;
+animation:twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:0.3;}
+to{opacity:1;}
+}
+
+/* luna */
+.moon{
+position:absolute;
+top:80px;
+left:-200px;
+width:120px;
+height:120px;
+background:#e5e7eb;
+border-radius:50%;
+box-shadow:0 0 40px white;
+animation:moonMove 40s linear infinite;
+}
+
+@keyframes moonMove{
+from{left:-200px;}
+to{left:110%;}
+}
+
+header{
+text-align:center;
+padding:60px 20px;
+background:rgba(0,0,0,0.5);
+}
+
+header h1{
+margin:0;
+font-size:48px;
+font-family:'Orbitron',sans-serif;
+color:#38bdf8;
+}
+
+header p{
+color:#60a5fa;
+font-size:18px;
+margin:5px 0;
+}
+
+/* Cabeza Minecraft */
+.head-container{
+position:relative;
+display:inline-block;
+cursor:pointer;
+margin-top:20px;
+}
+
+.head{
+width:120px;
+border-radius:10px;
+border:3px solid #38bdf8;
+transition:0.3s;
+}
+
+.head-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.7);
+padding:6px 10px;
+border-radius:6px;
+font-size:14px;
+opacity:0;
+transition:0.3s;
+}
+
+.head-container:hover .head{
+filter:brightness(0.4);
+}
+
+.head-container:hover .head-text{
+opacity:1;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+.card{
+background:rgba(17,24,39,0.95);
+padding:25px;
+border-radius:15px;
+margin-bottom:30px;
+box-shadow:0 0 20px rgba(0,0,0,0.7);
+}
+
+h2{
+color:#38bdf8;
+border-bottom:2px solid #38bdf8;
+padding-bottom:10px;
+}
+
+.skill-bar{
+position:relative;
+background:#111827;
+border-radius:8px;
+margin:10px 0;
+height:25px;
+width:100%;
+overflow:hidden;
+}
+
+.skill-bar-fill{
+height:100%;
+background:#2563eb;
+width:0%;
+border-radius:8px;
+text-align:right;
+padding-right:10px;
+line-height:25px;
+color:white;
+font-weight:bold;
+transition:width 2s ease-in-out;
+}
+
+.discord-button{
+display:inline-block;
+background:#5865F2;
+color:white;
+padding:12px 25px;
+margin-top:15px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.discord-button:hover{
+background:#4752c4;
+}
+
+/* BOTON VOLVER */
+
+.back-button{
+display:inline-block;
+background:#1e3a8a;
+color:white;
+padding:12px 25px;
+margin-top:15px;
+margin-left:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+border:2px solid #38bdf8;
+}
+
+.back-button:hover{
+background:#2563eb;
+transform:translateY(-2px);
+box-shadow:0 0 12px #38bdf8;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:rgba(0,0,0,0.5);
+color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Fondo -->
+<div class="sky">
+
+<div class="moon"></div>
+
+<div class="star" style="top:10%;left:20%"></div>
+<div class="star" style="top:30%;left:70%"></div>
+<div class="star" style="top:50%;left:40%"></div>
+<div class="star" style="top:80%;left:10%"></div>
+<div class="star" style="top:60%;left:80%"></div>
+<div class="star" style="top:20%;left:50%"></div>
+
+</div>
+
+<header>
+
+<h1>TitanBK</h1>
+<p>Minecraft Staff Portfolio</p>
+
+<a href="https://namemc.com/profile/TitanBK" target="_blank">
+<div class="head-container">
+
+<img class="head" src="https://mc-heads.net/avatar/TitanBK/120">
+
+<div class="head-text">Click aqui</div>
+
+</div>
+</a>
+
+<p>Discord: bosito1</p>
+
+<a href="https://discord.com/users/bosito1" class="discord-button">
+Contactar por Discord
+</a>
+
+<a href="https://titanbk.github.io/bosito.github.io/"back-button">
+← Volver a la página anterior
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Sobre mí</h2>
+<p>Tengo 19 años y soy de Brasil. Tengo experiencia como staff en servidores de videojuegos moderando comunidades y ayudando a mantener un ambiente organizado y justo para los jugadores.</p>
+</div>
+
+<div class="card">
+<h2>Experiencia en Staff</h2>
+
+<p><b>Manager – Servidor Battler</b><br>
+Supervisión general del servidor y coordinación del equipo de staff.</p>
+
+<p><b>SrAdmin – Dynamic</b><br>
+Administración del servidor y apoyo a moderadores.</p>
+
+<p><b>PlatformAdmin – DymonPvP</b><br>
+Supervisión de la plataforma y moderación de jugadores.</p>
+
+</div>
+
+<div class="card">
+<h2>Habilidades</h2>
+
+<div class="skill-bar"><div class="skill-bar-fill" style="width:90%">Moderación</div></div>
+<div class="skill-bar"><div class="skill-bar-fill" style="width:85%">Gestión de comunidades</div></div>
+<div class="skill-bar"><div class="skill-bar-fill" style="width:80%">Resolución de conflictos</div></div>
+<div class="skill-bar"><div class="skill-bar-fill" style="width:95%">Trabajo en equipo</div></div>
+<div class="skill-bar"><div class="skill-bar-fill" style="width:90%">Organización</div></div>
+
+</div>
+
+<div class="card">
+<h2>Idiomas</h2>
+Portugués — Nativo<br>
+Español — Avanzado
+</div>
+
+<div class="card">
+<h2>Disponibilidad</h2>
+3 a 4 horas diarias
+</div>
+
+<div class="card">
+<h2>¿Por qué quiero ser staff?</h2>
+
+<p>
+Me gustaría formar parte del equipo de staff porque disfruto contribuir al buen funcionamiento
+de las comunidades de Minecraft.
+</p>
+
+</div>
+
+<div class="card">
+<h2>¿Por qué deberían elegirme?</h2>
+
+<ul>
+<li>Buena comunicación con jugadores</li>
+<li>Capacidad para resolver conflictos</li>
+<li>Responsabilidad y respeto por las normas</li>
+<li>Trabajo en equipo</li>
+<li>Paciencia con los jugadores</li>
+<li>Compromiso con la comunidad</li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+TitanBK | Gaming Staff Portfolio
+</footer>
+
+<script>
+window.addEventListener('load',()=>{
+document.querySelectorAll('.skill-bar-fill').forEach(bar=>{
+bar.style.width=bar.style.width;
+});
+});
+</script>
+
+</body>
+</html>
